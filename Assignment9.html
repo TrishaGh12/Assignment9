@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html>
+	<head>
+		<title>sorting alphabetically</title>
+
+    	<script type="text/javascript">
+			function sortString()
+			{
+				var str=document.getElementById("field1").value;
+  				var arr = str.split('').sort().join('');
+  				document.getElementById("field2").value= arr;
+			}
+		</script>
+	</head>
+
+	<body>
+		<h2>Input the string and sort.</h2><br>
+		
+			Input The String: <input type="text" id="field1"><br>
+			
+			<button type="button" onClick="sortString()">Sort</button><br>
+			
+			The String after sorting: <input type="text" id="field2"><br>
+
+		
+    </body>
+</html>
